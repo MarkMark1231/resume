@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє резюме</title>
+    <script src="https://kit.fontawesome.com/174bc366c9.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            max-height: 1000px;
+            margin: 10px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .main .left_side {
+            position: relative;
+            background-color: rgb(173, 173, 250);
+            padding: 45px;
+        }
+
+        .profile {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile .img img {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contacts {
+            width: 250px;
+            padding-top: 40px;
+        }
+
+        .contacts ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        a {
+            outline: none;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+        }
+
+        .img {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .add_info {
+            padding-top: 20px;
+        }
+        
+        h5 {
+            padding-top: 10px;
+        }
+
+        h4 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .add_info ul li {
+            margin: 10px 0;
+        }
+
+        .add_info ul {
+            padding-left: 17px;
+        }
+
+
+        .main .right_side {
+            position: relative;
+            background-color: rgb(223, 244, 250);
+            padding: 45px;
+            font-size: large;
+        }
+
+
+        .title {
+            width: 570px;
+            height: 220px;
+            padding-top: 40px;
+            border-bottom: 1px solid rgb(173, 173, 250);
+        }
+
+        .about {
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgb(173, 173, 250);
+        }
+
+        .box {
+            padding-top: 20px;
+        }
+
+        .education {
+            padding-top: 40px;
+        }
+        p {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left_side">
+            <div class="profile">
+                <div class="img">
+                    <img src="/img1.jpg" alt="my photo">
+                </div>
+            </div>
+                <div class="contacts">
+                    <h3>Контакти</h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span> <a href="tel:+380954922826" target="_blank">+380954922826</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <span><a href="mailto:viktormarkovskiy95@gmail.com" target="_blank">viktormarkovskiy95@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa-brands fa-square-instagram"></i></span>
+                            <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><a href="https://www.facebook.com/" target="_blank">Facebook</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add_info">
+                    <h3>Додаткова інформація</h3>
+                    <h5>Досвідчений користувач</h4>
+                    <ul>
+                        <li>Microsoft 365</li>
+                        <li>1C:8</li>
+                        <li>Бітрікс24</li>
+                        <li>Trello</li>
+                    </ul>
+                    <h5>Знання мов:</h4>
+                    <ul>
+                        <li>українська - вільно</li>
+                        <li>англійська - Intermediate</li>
+                    </ul>
+                </div>
+        </div>
+    
+        <div class="right_side">
+            <div class="title">
+                <h1>Віктор Марковський <br> <span>Юрисконсульт</span></h1>
+            </div>
+            <div class="about">
+                <h2>Досвід роботи</h2>
+                <div class="box">
+                    <div>
+                        <h5>2019 - 2022</h5>
+                        <h5>Група компаній "СИНТЕЗ ГРУП"</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Юрисконсульт</h4>
+                        <ul>
+                            <li>повний юридичний супровід діяльності групи компаній;</li>
+                            <li>підготовка договорів відповідно до потреб компаній;</li>
+                            <li>підготовка локальних документів;</li>
+                            <li>моніторинг законодавчих змін.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <h5>2018 - 2019</h5>
+                        <h5>ТОВ "ХОСТІНГ УКРАЇНА"</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Юрисконсульт</h4>
+                        <ul>
+                            <li>обробка вхідної кориспонденції юридичного відділу;</li>
+                            <li>ведення обліку договорів;</li>
+                            <li>представництво інтересів компанії в судах.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <h5>2016 - 2018</h5>
+                        <h5>ТОВ "СКС"</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Юрисконсульт</h4>
+                        <ul>
+                            <li>підготовка та погодження договорів дистрибуції, маркетингових договорів, поставок;</li>
+                            <li>облік договорів в програмі 1С:8</li>
+                            <li>представництво інтересів компанії в судах;</li>
+                            <li>ведення архіву юридичного відділу.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <h5>2014 - 2015</h5>
+                        <h5>ТОВ "УКРФІНАНСИ"</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Провідний спеціаліс</h4>
+                        <ul>
+                            <li>ведення переговорів з проблемними боржниками.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h2>Освіта</h2>
+                <div class="box">
+                    <div>
+                        <h5>2018 - 2019</h5>
+                        <h5>Національний університет "Одеська юридична академія"</h5>
+                    </div>
+                    <div>
+                        <p>Факультет: кримінального права, процесу і криміналістики <br>Спеціальність: правоохоронна діяльність<br> Форма навчання: денна<br> Освітньо-кваліфікаційний рівень: магістр <br>Диплом з відзнакою</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <h5>2015 - 2016</h5>
+                        <h5>Київський національний університет технології та дизайну</h5>
+                    </div>
+                    <div>
+                        <p>Факультет: підприємництва та права <br>Спеціальність: право <br>Форма навчання: денна <br>Освітньо-кваліфікаційний рівень: бакалавр <br>Диплом з відзнакою
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
